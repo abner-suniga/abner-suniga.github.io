@@ -1212,16 +1212,8 @@ html {
   color: rgb(41 37 36 / var(--tw-text-opacity));
 }
 
-.underline-offset-1 {
-  text-underline-offset: 1px;
-}
-
 .underline-offset-2 {
   text-underline-offset: 2px;
-}
-
-.underline-offset-4 {
-  text-underline-offset: 4px;
 }
 
 .shadow-2xl {
