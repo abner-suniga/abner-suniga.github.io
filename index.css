@@ -1,10 +1,19 @@
-/* Reset & Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   background-color: #fff;
   color: #222;
   font-family: "Open Sans", sans-serif;
@@ -14,14 +23,7 @@ body {
   margin: 0 auto;
   padding: 60px 20px;
 }
-/* Header */
-header {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-}
+
 .profile {
   width: 150px;
   height: 150px;
@@ -33,29 +35,24 @@ header {
   display: flex;
   justify-content: center;
 }
+
 h1 {
   font-family: "Agdasima", sans-serif;
   font-size: 3em;
-  margin-bottom: 10px;
   letter-spacing: 4px;
 }
-/* Section Titles */
 h2 {
   font-family: "Agdasima", sans-serif;
   font-size: 2em;
-  margin: 40px 0 20px;
-  position: relative;
-  padding-bottom: 10px;
-  text-transform: uppercase; /* Adds a modern, fashion-forward feel */
+  text-transform: uppercase;
   letter-spacing: 4px;
 }
-/* Content */
 ul {
   padding-left: 18px;
 }
 li {
   margin-bottom: 15px;
-  font-size: 1em; /* Keeps list text crisp and refined */
+  font-size: 1em;
 }
 a {
   color: #222;
@@ -63,10 +60,8 @@ a {
   border-bottom: 2px solid #222;
   transition: border-bottom 0.3s;
 }
-/* Footer */
 footer {
   text-align: center;
-  margin-top: 60px;
   font-size: 0.9em;
   color: #555;
 }
@@ -74,11 +69,22 @@ nav a {
   margin-right: 20px;
 }
 main {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-/* Responsive Design */
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 30px 20px;
@@ -88,9 +94,6 @@ main {
   }
   h2 {
     font-size: 1.8em;
-  }
-  main {
-    grid-template-columns: 1fr;
   }
   header {
     flex-direction: column;
